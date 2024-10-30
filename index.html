@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/lib/css/bootstrap.min.css">
-    <title>MarketPlace</title>
+    <link rel="shortcut icon" href="Assets/icons/eagle.png" type="image/x-icon"> <!--Favicons-->
+    <title>FitFalcon</title>
 </head>
 <body>
     <header>
-        <nav class="container">
-            <div class="logo">MarketPlace</div>
+        <nav class="container-fluid bg">
+          <img class="Falcon" src="Assets/icons/eagle.png" alt="">
+            <div class="logo">FitFalcon</div>
             <div class="nav-links">
                 <a href="#">Home</a>
                 <a href="#">Categories</a>
@@ -19,19 +21,19 @@
                 <a href="#">Contact</a>
             </div>
             <div class="search-cart">
-                <input type="text" placeholder="Search...">
-                <div class="cart-icon">🛒</div>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"">
+                <button id="Cart" class="cart-icon btn btn-dark">🛒</button>
             </div>
-        </nav>
+        </nav>  
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero  bg-dark text-white">
             <div class="container hero-content">
                 <div class="hero-text">
                     <h1>Summer Sale</h1>
                     <p>Get up to 50% off on selected items</p>
-                    <a href="#" class="btn">Shop Now</a>
+                    <a href="#" class="btn btn btn-outline-light">Shop Now</a>
                 </div>
                 <div class="hero-image">
                     <img src="/placeholder.svg?height=300&width=400" alt="Summer Sale">
@@ -41,13 +43,12 @@
 
         <section class="categories">
             <div class="container">
-                <h2>Featured Categories</h2>
+                <h2>Categorias Destacadas</h2>
                 <div class="category-grid">
-                    <div class="category-item">Electronics</div>
-                    <div class="category-item">Clothing</div>
-                    <div class="category-item">Home & Garden</div>
-                    <div class="category-item">Sports</div>
-                    <div class="category-item">Books</div>
+                    <div class="category-item">Hombres</div>
+                    <div class="category-item">Mujeres</div>
+                    <div class="category-item">Accesorios</div>
+                   
                 </div>
             </div>
         </section>
@@ -123,5 +124,6 @@
     </footer>
 
     <Script src="src/lib/js/bootstrap.min.js"></Script>
+    <script src="src/js/cart.js"></script>
 </body>
 </html>

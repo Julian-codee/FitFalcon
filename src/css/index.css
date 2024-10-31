@@ -159,6 +159,22 @@ nav {
     justify-content: center;
 }
 
+.card {
+    width: 18rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; 
+  }
+  
+  .card-img-top {
+    max-height: 20%; 
+    object-fit: cover; 
+  }
+  
+
+
 footer {
     background-color: #333;
     color: #fff;

@@ -121,16 +121,18 @@ nav {
 
         /* Estilos para el menú desplegable del carrito */
         .cart-dropdown {
+            max-height: 300px;
+            overflow-y: auto;  
+            width: 310px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            color: white;
             position: absolute;
-            top: 50px;
-            right: 20px;
-            width: 300px;
-            border: 1px solid #ccc;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 15px;
-            display: none;
+            right: 0;
+            top: 100%;
+            display: none; /* Inicialmente oculto */
             z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .cart-item {
             display: flex;

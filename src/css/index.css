@@ -89,6 +89,45 @@ nav {
     border: none;
 }
 
+
+        /* Estilos para el menú desplegable del carrito */
+        .cart-dropdown {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            width: 300px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            display: none;
+            z-index: 10;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+        }
+        .cart-item-info {
+            margin-left: 10px;
+        }
+        .cart-item-title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .cart-actions {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .cart-actions button {
+            margin: 5px;
+        }
+
 .hero {
     background-color: #f9f9f9;
     padding: 3rem 0;

@@ -20,12 +20,13 @@ function addToCart(name, price, img) {
     updateCartDropdown();
 }
 
-// Función para actualizar el contenido del carrito desplegable
+//actualizar el contenido desplegable
 function updateCartDropdown() {
     const cartDropdown = document.getElementById("cart-dropdown");
-    cartDropdown.innerHTML = ''; // Limpiamos el contenido actual
+    // limpia el contenido
+    cartDropdown.innerHTML = ''; 
     
-    // Creamos los elementos de cada producto en el carrito
+    //elementos de cada producto
     cartItems.forEach((item, index) => {
         let itemElement = document.createElement("div");
         itemElement.classList.add("cart-item");
@@ -40,7 +41,7 @@ function updateCartDropdown() {
         cartDropdown.appendChild(itemElement);
     });
 
-    // Botón para vaciar todo el carrito
+    //vaciar todo el carrito
     let actionsElement = document.createElement("div");
     actionsElement.classList.add("cart-actions");
     actionsElement.innerHTML = `
@@ -49,30 +50,28 @@ function updateCartDropdown() {
     cartDropdown.appendChild(actionsElement);
 }
 
-// Función para quitar un solo artículo o reducir su cantidad
+//quitar un solo artículo o reducir su cantidad
 function removeSingleItem(index) {
-    // Si la cantidad es mayor a 1, solo restamos uno
     if (cartItems[index].quantity > 1) {
         cartItems[index].quantity--;
     } else {
-        // Si solo queda uno, lo quitamos completamente del carrito
         cartItems.splice(index, 1);
     }
 
-    // Disminuimos el contador total y actualizamos el contador visual
+    // disminuir el contador total y actualizar el contador visual
     cartCount--;
     document.getElementById("cart-count").textContent = cartCount;
     
-    // Actualizamos el contenido visual del carrito
+    // Actualizar el contenido visual del carrito
     updateCartDropdown();
 }
 
-// Función para vaciar todo el carrito
+//vaciar todo el carrito
 function clearCart() {
-    cartItems = []; // Borramos todos los elementos
-    cartCount = 0; // Reiniciamos el contador
+    cartItems = [];     
+    cartCount = 0; 
     document.getElementById("cart-count").textContent = cartCount;
-    updateCartDropdown(); // Actualizamos el carrito visual
+    updateCartDropdown();     
 }
 
 // Muestra/oculta el carrito cuando se hace clic en el botón del carrito

@@ -79,3 +79,5 @@ document.getElementById("cart-btn").addEventListener("click", function () {
     const cartDropdown = document.getElementById("cart-dropdown");
     cartDropdown.style.display = cartDropdown.style.display === "none" || cartDropdown.style.display === "" ? "block" : "none";
 });
+
+//Ver total del carrito

@@ -59,6 +59,30 @@
       </div>
     </section>
 
+
+      <!-- modal de pago -->
+      <section id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Simulador de Pago</h2>
+            <form id="paymentForm">
+                <div class="mb-3">
+                    <label for="cardNumber" class="form-label">Número de Tarjeta</label>
+                    <input type="text" class="form-control" id="cardNumber" required>
+                </div>
+                <div class="mb-3">
+                    <label for="expiryDate" class="form-label">Fecha de Expiración</label>
+                    <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cvv" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Pagar</button>
+            </form>
+        </div>
+    </section>
+
     <section class="products">
       <div class="container-fluid">
         <h2>Productos Destacados</h2>

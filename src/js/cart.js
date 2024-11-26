@@ -109,7 +109,7 @@ function simulatePurchase() {
     document.getElementById("paymentModal").style.display = "block";
 }
 
-//Simular Pago
+//Simular Pago    
 
 function processPayment(event) {
     event.preventDefault();
